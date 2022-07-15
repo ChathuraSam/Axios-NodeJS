@@ -1,0 +1,25 @@
+{
+  "name": "axios-nodejs",
+  "version": "1.0.0",
+  "description": "This is a sample project created to learn Axios. Axios is a promise based HTTP client for nodeJS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChathuraSam/Axios-NodeJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChathuraSam/Axios-NodeJS/issues"
+  },
+  "homepage": "https://github.com/ChathuraSam/Axios-NodeJS#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "nodemon": "^2.0.19"
+  }
+}
