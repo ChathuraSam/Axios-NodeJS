@@ -61,3 +61,30 @@ async function createUser() {
     }
 }
 
+// A function that is not related to the reqres.in. But this shows how to add headers and x-api-keys inside
+async function createQuestion() {
+    try {
+        const response = await axios.post(
+            // URL
+            `http://localhost:3000/local/questions`, 
+
+            // Payload
+            {                                       
+                title: "World History",
+                name: "history",
+                content: {
+                    some: "example",
+                    n: 3
+                },
+                type: "wip",
+            },
+
+            // Header
+            { 
+                headers: {'x-api-key': 'abc-asd-rfr-ade'} 
+            }
+        );
+    } catch(error) {
+        console.log(error)
+    }
+}
